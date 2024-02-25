@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='pdf2img',
+    version=get_version('pdf2img.py'),
+    description='A ChRIS DS plugin that simply converts input pdf files to output image files (jpg or png)',
     author='FNNDSC',
     author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    url='https://github.com/FNNDSC/pl-pdf',
+    py_modules=['pdf2img'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'pdf2img = pdf2img:main'
         ]
     },
     classifiers=[
