@@ -26,7 +26,7 @@ setup(
     author_email='dev@babyMRI.org',
     url='https://github.com/FNNDSC/pl-pdf',
     py_modules=['pdf2img'],
-    install_requires=['chris_plugin'],
+    install_requires=['chris_plugin', 'pdf2image', 'pillow', 'tqdm'],
     license='MIT',
     entry_points={
         'console_scripts': [
